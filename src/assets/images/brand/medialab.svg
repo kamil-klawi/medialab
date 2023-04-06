@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 4252 4253" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-236.22,-236.22)">
+        <g id="Logo">
+            <g transform="matrix(-5.55112e-17,0.6325,-2.28462,2.22045e-16,8299.32,1070.87)">
+                <rect x="1668.17" y="1668.17" width="746.942" height="1861.13" style="fill:rgb(249,249,249);"/>
+            </g>
+            <g transform="matrix(-7.60457e-17,0.6325,-1.26923,3.85331e-16,6605.48,2960.87)">
+                <rect x="1668.17" y="1668.17" width="746.942" height="1861.13" style="fill:rgb(249,249,249);"/>
+            </g>
+            <g transform="matrix(0.6325,0,0,2.28462,1070.87,-3574.91)">
+                <rect x="1668.17" y="1668.17" width="746.942" height="1861.13" style="fill:rgb(249,249,249);"/>
+            </g>
+            <g transform="matrix(0.547761,0.31625,-1.14231,1.97853,4212.43,-3425.16)">
+                <rect x="1668.17" y="1668.17" width="746.942" height="1861.13" style="fill:rgb(249,249,249);"/>
+            </g>
+            <g transform="matrix(0.31625,0.547761,-1.97853,1.14231,6858.23,-1724.68)">
+                <rect x="1668.17" y="1668.17" width="746.942" height="1861.13" style="fill:rgb(249,249,249);"/>
+            </g>
+            <path d="M2771.35,2598.42L1503.79,402.938L1094.64,639.159L2598.24,3243.46L2598.24,2598.42L2771.35,2598.42Z" style="fill:rgb(249,249,249);"/>
+            <path d="M3243.79,2598.42L639.159,1094.64L402.938,1503.79L2598.24,2771.24L2598.24,2598.42L3243.79,2598.42Z" style="fill:rgb(249,249,249);"/>
+            <g transform="matrix(0.685328,0,0,0.685328,1069.33,760.38)">
+                <circle cx="3609.75" cy="3716.04" r="689.365" style="fill:rgb(249,249,249);"/>
+            </g>
+        </g>
+    </g>
+</svg>
