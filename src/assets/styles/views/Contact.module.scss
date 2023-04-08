@@ -1,3 +1,6 @@
+@use "../mixins/media" as m;
+@use "../variables/typography" as t;
+
 .anchor {
   display: flex;
   justify-content: flex-start;
@@ -27,11 +30,11 @@
       }
   
       .link {
-        color: #f9f9f9;
+        color: var(--primary-color);
         font-family: sans-serif;
         font-weight: 400;
-        font-size: 1.5rem;
-        line-height: calc(1.5rem * 1.5);
+        font-size: t.$font-size-large;
+        line-height: calc(t.$font-size-large * 1.5);        
       }
     }
   }
@@ -45,17 +48,16 @@
     display: flex;
     justify-content: space-evenly;
 
-    @media screen and (max-width: 768px) {
+    @include m.smartphone() {
       display: block;
       padding: 2rem 0;
     }
 
     span {
-      color: #f9f9f9;
-      font-family: sans-serif;
+      font-family: t.$sans-serif;
       font-weight: 400;
-      font-size: 1.5rem;
-      line-height: calc(1.5rem * 1.5);
+      font-size: t.$font-size-large;
+      line-height: calc(t.$font-size-large * 1.5);
     }
   }
 
@@ -63,13 +65,12 @@
     margin: 4rem 0 0 2rem;
     display: flex;
     justify-content: space-evenly;
-    color: #f9f9f9;
-    font-family: sans-serif;
+    font-family: t.$sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: calc(1.5rem * 1.5);
+    font-size: t.$font-size-large;
+    line-height: calc(t.$font-size-large * 1.5);
 
-    @media screen and (max-width: 768px) {
+    @include m.smartphone() {
       display: block;
       margin: 0;
     }
@@ -88,7 +89,7 @@
     }
     
     & .anchor .anchor__inner .inner__link:first-child {
-      text-decoration: .1rem solid underline #f9f9f9;
+      text-decoration: .1rem solid underline var(--primary-color);
     }
   }
 }

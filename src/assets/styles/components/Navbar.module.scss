@@ -1,17 +1,20 @@
+@use "../mixins/media" as m;
+@use "../variables/typography" as t;
+
 @mixin Anchor {
   .nav__link {
     padding: .5rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: .15rem solid #f9f9f9;
+    border: .15rem solid var(--primary-color);
     border-radius: 10rem;
     transition: background-color .25s;
     text-decoration: none;
 
     &:hover {
-      background-color: #3A0CA3;
-      border: .15rem solid #3A0CA3;
+      background-color: var(--secondary-color);
+      border: .15rem solid var(--secondary-color);
     }
   
     &:hover .inner .inner__link {
@@ -36,11 +39,11 @@
         }
   
         .link {
-          color: #f9f9f9;
-          font-family: sans-serif;
+          color: var(--primary-color);
+          font-family: t.$sans-serif;
           font-weight: 400;
-          font-size: .975rem;
-          line-height: calc(.975rem * 1.5);
+          font-size: t.$font-size-normal;
+          line-height: calc(t.$font-size-normal * 1.5);
         }
       }
     }
@@ -56,7 +59,7 @@
   align-items: flex-start;
   background-color: transparent;
 
-  @media screen and (max-width: 768px) {
+  @include m.smartphone() {
     height: 30dvh;
   }
 
@@ -64,7 +67,7 @@
     width: 16rem;
     z-index: 9999;
 
-    @media screen and (max-width: 768px) {
+    @include m.smartphone() {
       width: 6rem;
     }
   }
@@ -73,44 +76,44 @@
   .nav__theme {
     padding: .5rem 1rem;
     display: none;
-    color: #f9f9f9;
-    font-family: sans-serif;
+    color: var(--primary-color);
+    font-family: t.$sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: calc(1.5rem * 1.5);
+    font-size: t.$font-size-large;
+    line-height: calc(t.$font-size-large * 1.5);
     z-index: 9999;
     cursor: pointer;
 
-    @media screen and (max-width: 768px) {
+    @include m.smartphone() {
       display: block;
     }
   }
 
   .nav__theme {
     display: block;
-    font-size: .975rem;
-    line-height: calc(.975rem * 1.5);
+    font-size: t.$font-size-normal;
+    line-height: calc(t.$font-size-normal * 1.5);
     text-transform: capitalize;
-    border: .15rem solid #f9f9f9;
+    border: .15rem solid var(--primary-color);
     border-radius: 10rem;
     transition: background-color .25s;
 
     &:hover {
-      background-color: #3A0CA3;
-      border: .15rem solid #3A0CA3;
+      background-color: var(--secondary-color);
+      border: .15rem solid var(--secondary-color);
     }
   }
 
   .nav__dropdown {
     width: 100%;
     height: 100dvh;
-    background-color: #3A0CA3;
+    background-color: var(--secondary-color);
     position: absolute;
     top: 0;
     left: 0;
     display: none;
       
-    @media screen and (max-width: 768px) {
+    @include m.smartphone() {
       display: flex;
       z-index: 9998;
     }
@@ -123,7 +126,7 @@
       .nav__item {
         padding: .5rem 0;
   
-        @include Anchor;
+        @include Anchor();
       }
     }
   }
@@ -133,18 +136,18 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 768px) {
+    @include m.smartphone() {
       display: none;
     }
   
     .nav__item {
       padding: 0 0 0 1rem;
   
-      @include Anchor;
+      @include Anchor();
 
       .nav__active {
-        background-color: #3A0CA3;
-        border: .15rem solid #3A0CA3;
+        background-color: var(--secondary-color);
+        border: .15rem solid var(--secondary-color);
       }
     }
   }

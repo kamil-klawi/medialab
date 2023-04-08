@@ -1,9 +1,22 @@
-html,
+@use "../variables/colors" as c;
+
+:root {
+  --primary-color: #{c.$light-color};
+  --secondary-color: #{c.$purple-color};
+  --third-color: #{c.$dark-color};
+}
+
+[data-theme="true"] {
+  --primary-color: #{c.$pink-color};
+  --secondary-color: #{c.$dark-green-color};
+  --third-color: #{c.$green-color};
+}
+
 body {
-  color: #f9f9f9;
-  background-color: #1e1e1e;
+  color: var(--primary-color);
+  background-color: var(--third-color);
 }
 
 ::selection {
-  background-color: #3A0CA3;
+  background-color: var(--secondary-color);
 }

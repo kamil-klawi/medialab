@@ -6,14 +6,16 @@ import Brand from "@assets/images/brand/medialab.svg";
 import s from "@assets/styles/components/Navbar.module.scss";
 
 export default function Navbar() {
-  const [visibility, setVisibility] = useState(false);
+  const [visibility, setVisibility] = useState<boolean>(false);
   const [theme, setTheme] = useState(localStorage.getItem("theme") === "true");
-
   const toggleVisibility = () => setVisibility(!visibility);
   const toggleTheme = () => setTheme(!theme);
 
   useEffect(() => {
-    localStorage.setItem("theme", theme);
+    localStorage.setItem("theme", theme.toString());
+    document
+      .querySelector("body")
+      ?.setAttribute("data-theme", theme.toString());
   }, [theme]);
 
   const obj = {
@@ -36,7 +38,7 @@ export default function Navbar() {
             <Anchor url="/" name="start page" />
           </li>
           <li className={s.nav__item}>
-            <Anchor url="/about" name="agency" />
+            <Anchor url="/agency" name="agency" />
           </li>
           <li className={s.nav__item}>
             <Anchor url="/services" name="services" />
@@ -57,10 +59,15 @@ export default function Navbar() {
         >
           <ul className={s.nav__menu_mobile}>
             <li className={s.nav__item}>
+              <span onClick={toggleTheme} className={s.nav__theme}>
+                theme
+              </span>
+            </li>
+            <li className={s.nav__item}>
               <Anchor url="/" name="start page" />
             </li>
             <li className={s.nav__item}>
-              <Anchor url="/about" name="agency" />
+              <Anchor url="/agency" name="agency" />
             </li>
             <li className={s.nav__item}>
               <Anchor url="/services" name="services" />

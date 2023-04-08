@@ -1,5 +1,7 @@
 import Home from "./Home";
-import PageNotFound from "./PageNotFound";
+import Agency from "./Agency";
+import Services from "./Services";
 import Contact from "./Contact";
+import PageNotFound from "./PageNotFound";
 
-export { Home, PageNotFound, Contact };
+export { Home, Agency, Services, Contact, PageNotFound };
