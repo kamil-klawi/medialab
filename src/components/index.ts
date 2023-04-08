@@ -1,3 +1,5 @@
 import Navbar from "./Navbar";
+import Form from "./Form";
+import Footer from "./Footer";
 
-export { Navbar };
+export { Navbar, Form, Footer };

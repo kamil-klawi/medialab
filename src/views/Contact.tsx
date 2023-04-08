@@ -1,7 +1,9 @@
 import { IAnchor } from "@types";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import s from "@assets/styles/views/Contact.module.scss";
 
 export default function Contact() {
+  useDocumentTitle("Get in touch");
   return (
     <div className={s.wrapper}>
       <div className={s.info__wrapper}>

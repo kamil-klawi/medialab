@@ -1,0 +1,34 @@
+@use "../mixins/media" as m;
+@use "../variables/typography" as t;
+
+.footer {
+  margin: 2rem 0 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  span {
+    color: var(--primary-color);
+    font-family: t.$sans-serif;
+    font-weight: 400;
+    font-size: t.$font-size-normal;
+    line-height: calc(t.$font-size-normal * 1.5);
+  }
+
+  .footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    span {
+      padding: 0 0 0 1rem;
+      cursor: pointer;
+      
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
