@@ -8,6 +8,11 @@
   justify-content: space-between;
   align-content: center;
 
+  @include m.smartphone() {
+    justify-content: center;
+    flex-direction: column;
+  }
+
   span {
     color: var(--primary-color);
     font-family: t.$sans-serif;
@@ -22,9 +27,23 @@
     align-items: center;
     flex-wrap: nowrap;
 
+    &:first-child {
+      span {
+        padding: 0 1rem 0 0;
+
+        @include m.smartphone() {
+          padding: 0 .25rem;
+        }
+      }
+    }
+
     span {
       padding: 0 0 0 1rem;
       cursor: pointer;
+
+      @include m.smartphone() {
+        padding: 1rem .25rem 0;
+      }
       
       &::first-letter {
         text-transform: capitalize;

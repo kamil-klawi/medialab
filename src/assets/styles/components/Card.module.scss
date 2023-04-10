@@ -1,0 +1,61 @@
+@use "../mixins/media" as m;
+@use "../variables/typography" as t;
+
+.card {
+  padding: 1rem;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 1rem;
+
+  .card__image {
+    border-radius: 1rem 1rem 0 0;
+    aspect-ratio: 9/16;
+    background-image: url("../../images/magazine/wallpaper_03.jpg");
+    background-color: var(--secondary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card__content {
+    padding: 2rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      color: var(--primary-color);
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: t.$font-size-large;
+      line-height: calc(t.$font-size-large * 1.5);
+      text-transform: capitalize;
+    }
+  }
+
+  .card__social {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+
+    div {
+      .card__link {
+        margin: 0 1rem;
+
+        @include m.smartphone() {
+          margin: 0 .5rem;
+        }
+
+        svg {
+          transition: color .3s;
+          cursor: pointer;
+    
+          &:hover {
+            color: var(--secondary-color);
+          }
+        }
+      }
+    }
+  }
+}

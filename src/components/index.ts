@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
-import Form from "./Form";
+import { FormServices, FormWorks } from "./Form";
 import Footer from "./Footer";
+import Cards from "./Cards";
 
-export { Navbar, Form, Footer };
+export { Navbar, FormServices, FormWorks, Footer, Cards };
