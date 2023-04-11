@@ -4,12 +4,14 @@
   --primary-color: #{c.$light-color};
   --secondary-color: #{c.$purple-color};
   --third-color: #{c.$dark-color};
+  --fourth-color: #{c.$grey-light-color};
 }
 
 [data-theme="true"] {
   --primary-color: #{c.$pink-color};
   --secondary-color: #{c.$dark-green-color};
   --third-color: #{c.$green-color};
+  --fourth-color: #{c.$pink-dark-color};
 }
 
 body {

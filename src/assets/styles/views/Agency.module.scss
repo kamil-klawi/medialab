@@ -4,7 +4,7 @@
 .wrapper {
 
   .inner__wrapper {
-    padding: 0 2rem;
+    padding: 2rem;
 
     .wrapper__content {
       max-width: 100%;
@@ -15,7 +15,17 @@
         font-family: t.$sans-serif;
         font-size: 3rem ;
         line-height: calc(3rem * 1.5);
-        text-align: justify;       
+        text-align: justify;
+        
+        @include m.smartphone() {
+          font-size: t.$font-size-large;
+          line-height: calc(t.$font-size-large * 1.5);
+        }
+  
+        @include m.tablet() {
+          font-size: t.$font-size-large;
+          line-height: calc(t.$font-size-large * 1.5);
+        }
       }
     }
 
@@ -47,11 +57,14 @@
         font-weight: 400;
         font-size: 3rem;
         line-height: calc(3rem * 1.5);
-        text-transform: capitalize;
 
         &:first-child {
           font-size: t.$font-size-large;
           line-height: calc(t.$font-size-large * 1.5);
+        }
+
+        &::first-letter {
+          text-transform: uppercase;
         }
       }
     }

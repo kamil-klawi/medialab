@@ -1,0 +1,21 @@
+@use "../mixins/media" as m;
+
+.wrapper {
+  margin: 4rem 2rem 2rem;
+
+  .wrapper__works {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
+
+    @include m.smartphone() {
+      grid-template-columns: repeat(1, auto);
+      gap: 0;
+    }
+
+    @include m.tablet() {
+      grid-template-columns: repeat(1, auto);
+      gap: 0;
+    }
+  }
+}

@@ -19,8 +19,7 @@
   .card__content {
     padding: 2rem 0 1rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 
     span {
       color: var(--primary-color);
@@ -28,7 +27,13 @@
       font-weight: 400;
       font-size: t.$font-size-large;
       line-height: calc(t.$font-size-large * 1.5);
-      text-transform: capitalize;
+
+      &:last-child {
+        font-size: t.$font-size-normal;
+        line-height: calc(t.$font-size-normal * 1.5);
+        color: var(--fourth-color);
+        font-weight: 600;
+      }
     }
   }
 

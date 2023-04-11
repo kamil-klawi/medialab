@@ -1,0 +1,100 @@
+@use "../mixins/media" as m;
+@use "../variables/typography" as t;
+
+.card {
+  .card__image {
+    aspect-ratio: 16/9;
+    background-color: var(--secondary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &:nth-child(1) {
+    .card__image {
+      background-image: url("../../images/magazine/wallpaper_01.jpg");
+    }
+  }
+  
+  &:nth-child(2) {
+    .card__image {
+      background-image: url("../../images/magazine/wallpaper_02.jpg");
+    }
+  }
+
+  &:nth-child(3) {
+    .card__image {
+      background-image: url("../../images/magazine/wallpaper_03.jpg");
+    }
+  }
+
+  &:nth-child(4) {
+    .card__image {
+      background-image: url("../../images/magazine/wallpaper_04.jpg");
+    }
+  }
+
+  .card__inner {
+    padding: 2rem 0;
+
+    .card__content {
+      padding: 0 0 .5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include m.smartphone() {
+        padding: 0 0 1rem;
+      }
+  
+      @include m.tablet() {
+        padding: 0 0 1rem;
+      }
+  
+      .card__text {
+        color: var(--primary-color);
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: t.$font-size-large;
+        line-height: calc(t.$font-size-large * 1.5);
+        text-transform: capitalize;
+      }
+    }
+
+    .card__button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: .15rem solid var(--third-color);
+      transition: border-bottom .3s;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: .15rem solid var(--secondary-color);
+      }
+
+      &:hover svg {
+        transform: rotate(45deg);
+      }
+
+      .button__text {
+        padding-bottom: .5rem;
+        color: var(--primary-color);
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: t.$font-size-normal;
+        line-height: calc(t.$font-size-normal * 1.5);
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+      .button__svg {
+        height: t.$font-size-large;
+        line-height: calc(t.$font-size-large * 1.5);
+        transition: .6s transform;
+      }
+    }
+  }
+}

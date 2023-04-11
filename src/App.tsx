@@ -1,10 +1,14 @@
-import { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Agency, Services, Contact, PageNotFound } from "@views";
+import {
+  Home,
+  Agency,
+  Services,
+  Works,
+  Blog,
+  Contact,
+  PageNotFound,
+} from "@views";
 import { Navbar } from "@components";
-
-const Blog = lazy(() => import("./views/Blog"));
-const Works = lazy(() => import("./views/Works"));
 
 export default function App() {
   return (
