@@ -24,25 +24,33 @@ export default function Cards() {
         <div className={s.card__social}>
           <div>
             <span
-              className={s.card__link}
+              className={`${s.card__link} ${
+                item.instagramUrl === "" ? s.social__disabled : ""
+              }`}
               onClick={() => navigate(item.instagramUrl)}
             >
               <BsInstagram size={20} />
             </span>
             <span
-              className={s.card__link}
+              className={`${s.card__link} ${
+                item.facebookUrl === "" ? s.social__disabled : ""
+              }`}
               onClick={() => navigate(item.facebookUrl)}
             >
               <BsFacebook size={20} />
             </span>
             <span
-              className={s.card__link}
+              className={`${s.card__link} ${
+                item.twitterUrl === "" ? s.social__disabled : ""
+              }`}
               onClick={() => navigate(item.twitterUrl)}
             >
               <BsTwitter size={20} />
             </span>
             <span
-              className={s.card__link}
+              className={`${s.card__link} ${
+                item.linkedinUrl === "" ? s.social__disabled : ""
+              }`}
               onClick={() => navigate(item.linkedinUrl)}
             >
               <BsLinkedin size={20} />
@@ -50,19 +58,25 @@ export default function Cards() {
           </div>
           <div>
             <span
-              className={s.card__link}
+              className={`${s.card__link} ${
+                item.dribbbleUrl === "" ? s.social__disabled : ""
+              }`}
               onClick={() => navigate(item.dribbbleUrl)}
             >
               <BsDribbble size={20} />
             </span>
             <span
-              className={s.card__link}
+              className={`${s.card__link} ${
+                item.behanceUrl === "" ? s.social__disabled : ""
+              }`}
               onClick={() => navigate(item.behanceUrl)}
             >
               <BsBehance size={20} />
             </span>
             <span
-              className={s.card__link}
+              className={`${s.card__link} ${
+                item.githubUrl === "" ? s.social__disabled : ""
+              }`}
               onClick={() => navigate(item.githubUrl)}
             >
               <BsGithub size={20} />

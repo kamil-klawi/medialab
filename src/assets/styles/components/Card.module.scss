@@ -61,6 +61,18 @@
           }
         }
       }
+
+      .social__disabled {
+        color: var(--fourth-color);
+
+        svg {
+          cursor: default;
+
+          &:hover {
+            color: var(--fourth-color);
+          }
+        }
+      }
     }
   }
 }

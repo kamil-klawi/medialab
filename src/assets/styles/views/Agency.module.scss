@@ -8,7 +8,7 @@
 
     .wrapper__content {
       max-width: 100%;
-      padding: 24rem 0;
+      padding: 24rem 0 12rem;
       position: relative;
   
       p {
@@ -48,6 +48,7 @@
     }
 
     .wrapper__team {
+      margin: 8rem 0;
       display: flex;
       flex-direction: column;
 
@@ -61,10 +62,42 @@
         &:first-child {
           font-size: t.$font-size-large;
           line-height: calc(t.$font-size-large * 1.5);
+          color: var(--fourth-color);
         }
 
         &::first-letter {
           text-transform: uppercase;
+        }
+      }
+
+      .wrapper__subHeader {
+        margin: 4rem 0 0;
+        color: var(--primary-color);
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: calc(2.5rem * 1.5);
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+      .wrapper__text {
+        max-width: 50%;
+        color: var(--fourth-color);
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: t.$font-size-large;
+        line-height: calc(t.$font-size-large * 1.5);
+        text-align: justify;
+
+        @include m.smartphone() {
+          max-width: 100%;
+        }
+  
+        @include m.tablet() {
+          max-width: 100%;
         }
       }
     }
