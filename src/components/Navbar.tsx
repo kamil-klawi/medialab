@@ -2,6 +2,7 @@ import { useState, useEffect, Suspense } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { IAnchor } from "@types";
 import { checkRoute } from "@utils";
+import { Loader } from "@components";
 import Brand from "@assets/images/brand/medialab.svg";
 import s from "@assets/styles/components/Navbar.module.scss";
 
@@ -87,7 +88,7 @@ export default function Navbar() {
           menu
         </span>
       </nav>
-      <Suspense fallback={<h1>Loading...</h1>}>
+      <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
     </>

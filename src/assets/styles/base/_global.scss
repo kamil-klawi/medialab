@@ -5,6 +5,7 @@
   --secondary-color: #{c.$purple-color};
   --third-color: #{c.$dark-color};
   --fourth-color: #{c.$grey-light-color};
+  --fifth-color: #{c.$turquoise-color};
 }
 
 [data-theme="true"] {
@@ -12,6 +13,7 @@
   --secondary-color: #{c.$dark-green-color};
   --third-color: #{c.$green-color};
   --fourth-color: #{c.$pink-dark-color};
+  --fifth-color: #{c.$magenta-color};
 }
 
 body {

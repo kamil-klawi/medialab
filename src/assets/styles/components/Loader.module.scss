@@ -1,0 +1,68 @@
+@use "../mixins/media" as m;
+@use "../variables/typography" as t;
+
+.wrapper__letters {
+  margin: -35vh 0;
+  background: linear-gradient(135deg, var(--secondary-color), var(--fifth-color));
+
+  .wrapper__row {
+    width: 100%;
+    height: 50vh;
+
+    .letter {
+      color: var(--primary-color);
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: 7rem;
+      line-height: calc(7rem * 1.5);
+    }
+
+    .top__left,
+    .top__right,
+    .bottom__left,
+    .bottom__right {
+      position: absolute;
+      z-index: 9999;
+    }
+
+    .top__left {
+      top: 34%;
+      left: 45%;
+      animation: 3.1s moveToTop ease-in-out;
+    }
+
+    .top__right {
+      top: 34%;
+      right: 45%;
+      animation: 3.1s moveToTop ease-in-out;
+    }
+
+    .bottom__left {
+      bottom: 34%;
+      left: 45%;
+      animation: 3.1s moveToBottom ease-in-out;
+    }
+
+    .bottom__right {
+      bottom: 34%;
+      right: 45%;
+      animation: 3.1s moveToBottom ease-in-out;
+    }
+  }
+}
+
+@keyframes moveToTop {
+  from {
+    top: 34%;
+  } to {
+    top: 0%;
+  }
+}
+
+@keyframes moveToBottom {
+  from {
+    bottom: 34%;
+  } to {
+    bottom: 0%;
+  }
+}
