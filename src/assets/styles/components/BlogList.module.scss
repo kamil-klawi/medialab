@@ -1,0 +1,114 @@
+@use "../mixins/media" as m;
+@use "../variables/typography" as t;
+
+.card {
+  padding: 1rem;
+
+  .card__image {
+    border-radius: 1rem;
+    aspect-ratio: 16/10;
+    background-color: var(--secondary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:nth-child(1) { 
+      background-image: url("../../images/magazine/wallpaper_01.jpg");
+    }
+
+    &:nth-child(2) { 
+      background-image: url("../../images/magazine/wallpaper_02.jpg");
+    }
+
+    &:nth-child(3) { 
+      background-image: url("../../images/magazine/wallpaper_03.jpg");
+    }
+
+    &:nth-child(4) { 
+      background-image: url("../../images/magazine/wallpaper_04.jpg");
+    }
+  }
+
+  .card__content {
+    padding: 2rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .card__date {
+      display: flex;
+      align-content: center;
+
+      .date__day,
+      .date__hour {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--primary-color);
+        font-family: sans-serif;
+        font-weight: 400;
+        padding: 0 1rem 0 0;
+
+        svg {
+          padding: 0 0.5rem 0 0;
+          height: calc(t.$font-size-normal * 1.5);
+          line-height: calc(t.$font-size-normal * 1.5);
+        }
+      }
+    }
+
+    .card__header,
+    .card__description {
+      padding: 1rem 0;
+      max-width: 100%;
+      color: var(--primary-color);
+      font-family: sans-serif;
+      font-weight: 400;
+    }
+
+    .card__header {
+      font-size: t.$font-size-large;
+      line-height: calc(t.$font-size-large * 1.5);
+    }
+
+    .card__description {
+      font-size: t.$font-size-normal;
+      line-height: calc(t.$font-size-normal * 1.5);
+    }
+  }
+
+      .card__button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: .15rem solid var(--third-color);
+      transition: border-bottom .3s;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: .15rem solid var(--secondary-color);
+      }
+
+      &:hover svg {
+        transform: rotate(45deg);
+      }
+
+      .button__text {
+        padding-bottom: .5rem;
+        color: var(--primary-color);
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: t.$font-size-normal;
+        line-height: calc(t.$font-size-normal * 1.5);
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+      .button__svg {
+        height: t.$font-size-large;
+        line-height: calc(t.$font-size-large * 1.5);
+        transition: .6s transform;
+      }
+    }
+}

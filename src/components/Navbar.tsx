@@ -42,9 +42,6 @@ export default function Navbar() {
             <Anchor url="/agency" name="agency" />
           </li>
           <li className={s.nav__item}>
-            <Anchor url="/services" name="services" />
-          </li>
-          <li className={s.nav__item}>
             <Anchor url="/works" name="case studies" />
           </li>
           <li className={s.nav__item}>
@@ -69,9 +66,6 @@ export default function Navbar() {
             </li>
             <li className={s.nav__item}>
               <Anchor url="/agency" name="agency" />
-            </li>
-            <li className={s.nav__item}>
-              <Anchor url="/services" name="services" />
             </li>
             <li className={s.nav__item}>
               <Anchor url="/works" name="case studies" />

@@ -48,6 +48,50 @@
       right: 45%;
       animation: 3.1s moveToBottom ease-in-out;
     }
+
+    @include m.smartphone() {
+      .top__left {
+        top: 16%;
+        left: 28%;
+      }
+  
+      .top__right {
+        top: 16%;
+        right: 28%;
+      }
+  
+      .bottom__left {
+        bottom: 16%;
+        left: 28%;
+      }
+  
+      .bottom__right {
+        bottom: 16%;
+        right: 28%;
+      }
+    }
+
+    @include m.tablet() {
+      .top__left {
+        top: 16%;
+        left: 28%;
+      }
+  
+      .top__right {
+        top: 16%;
+        right: 28%;
+      }
+  
+      .bottom__left {
+        bottom: 16%;
+        left: 28%;
+      }
+  
+      .bottom__right {
+        bottom: 16%;
+        right: 28%;
+      }
+    }
   }
 }
 

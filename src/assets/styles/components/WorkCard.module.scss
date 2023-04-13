@@ -3,7 +3,7 @@
 
 .card {
   .card__image {
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/10;
     background-color: var(--secondary-color);
     background-position: center;
     background-repeat: no-repeat;
@@ -12,25 +12,32 @@
 
   &:nth-child(1) {
     .card__image {
-      background-image: url("../../images/magazine/wallpaper_01.jpg");
+      background-image: url("../../images/projects/Cuteflow.png");
     }
   }
   
   &:nth-child(2) {
     .card__image {
-      background-image: url("../../images/magazine/wallpaper_02.jpg");
+      background-image: url("../../images/projects/K9K.png");
     }
   }
 
   &:nth-child(3) {
     .card__image {
-      background-image: url("../../images/magazine/wallpaper_03.jpg");
+      background-image: url("../../images/projects/Brandless.png");
     }
   }
 
   &:nth-child(4) {
     .card__image {
-      background-image: url("../../images/magazine/wallpaper_04.jpg");
+      background-image: url("../../images/projects/NorthBlossom.png");
+      background-size: contain;
+    }
+  }
+
+  &:nth-child(5) {
+    .card__image {
+      background-image: url("../../images/projects/WEBLAND.png");
     }
   }
 

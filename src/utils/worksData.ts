@@ -4,19 +4,19 @@ export const worksData = [
     year: 2023,
   },
   {
-    name: "NorthBlossom",
+    name: "K9K",
     year: 2023,
   },
   {
-    name: "Unsplash",
+    name: "Brandless",
     year: 2022,
   },
   {
-    name: "Wikipedia",
+    name: "NorthBlossom",
     year: 2022,
   },
   {
-    name: "Sapphire Studio",
+    name: "WEBLAND",
     year: 2021,
   },
 ];

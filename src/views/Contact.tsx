@@ -14,15 +14,15 @@ export default function Contact() {
         <div>
           <span>S.</span>
           <Anchor url="https://www.instagram.com/" name="instagram" />
-          <Anchor url="https://www.instagram.com/" name="facebook" />
-          <Anchor url="https://www.instagram.com/" name="twitter" />
-          <Anchor url="https://www.instagram.com/" name="linkedin" />
+          <Anchor url="https://www.facebook.com/" name="facebook" />
+          <Anchor url="https://twitter.com/" name="twitter" />
+          <Anchor url="https://www.linkedin.com/" name="linkedin" />
         </div>
         <div>
           <span>P.</span>
-          <Anchor url="https://www.instagram.com/" name="behance" />
-          <Anchor url="https://www.instagram.com/" name="dribbble" />
-          <Anchor url="https://www.instagram.com/" name="github" />
+          <Anchor url="https://www.behance.net/" name="behance" />
+          <Anchor url="https://dribbble.com/" name="dribbble" />
+          <Anchor url="https://github.com/" name="github" />
         </div>
       </div>
       <div className={s.info__wrapper}>
